@@ -1,0 +1,63 @@
+@media screen and (max-width:768px) {
+    nav .btn{
+        visibility: visible;
+    }
+    nav .btn span,
+    nav .btn span::after,
+    nav .btn span::before{
+        transition-duration: 0.5s;
+    }
+
+    nav .menu{
+        display: none;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+    nav .menu.active{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        background-color: #222;
+        top: 32px;
+        right: 0;
+        height: 100vh;
+        width: 10rem;
+        gap: 10px;
+        align-items: center;
+        justify-content: flex-start;
+        transition: all 3s ease;
+
+    }
+    nav .menu.acive li{
+        margin-top: 20px;
+
+    }
+    #home{
+        height: 100%;
+    }
+    #home .profile_image{
+        display: none;
+    }
+    #home .profile_info{
+        width: 100%;
+        line-height: 0px;
+        position: relative;
+        top: 100px;
+    }
+    #home .profile_info svg{
+        height: 50%;
+    }
+
+    #home .profile_info svg text{
+        font-size: 3rem;
+    }
+    #home .profile_info h1{
+        font-size: 2.5rem;
+    }
+    #home .profile_info p{
+        font-size: 0.9rem;
+    }
+}
